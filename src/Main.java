@@ -1,20 +1,45 @@
 import javax.sound.sampled.EnumControl;
 import java.util.*;
-public class Main{
+public class Main {
     public static void main(String[] args) {
-        int sum =0, a=0, b=1;
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter the nth term : ");
-        System.out.println(a);
-        System.out.println(b);
-        int n = input.nextInt();
-        for (int i=2; i<=n; i++){
-            a=b;
-            b=sum;
-            sum = a+b;
-            System.out.println(sum);
-        }
+       Scanner in = new Scanner(System.in);
+       System.out.println("Please enter your name: ");
+       String input = in.next();
+        System.out.println("Please enter your department: ");
+       String department = in.next();
+       switch(input){
+           case "Swapnil" ->{
+               switch (department){
+                   case "IT" -> System.out.println("Hello Swapnil Wadhankar");
+                   default -> System.out.println("Enter a valid department");
+               }
+
+           }
+           case "Vinay" ->{
+               switch (department){
+                   case "CSE" -> System.out.println("Hello Vinay Kumar Gahane");
+                   default -> System.out.println("Enter a valid department");
+               }
+
+           }
+           case "Shreyash" ->{
+               switch (department){
+                   case "EE" -> System.out.println("Hello Shreyash Ghonge");
+                   default -> System.out.println("Enter a valid department");
+               }
+
+           }
+           case "Shreyanshu" ->{
+               switch (department){
+                   case "ETC" -> System.out.println("Hello Shreyanshu Deshmukh");
+                   default -> System.out.println("Enter a valid department");
+               }
+
+           }
+           default -> System.out.println("Pleas enter a valid name");
+       }
 
 
     }
+
 }
