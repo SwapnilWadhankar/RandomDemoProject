@@ -1,5 +1,4 @@
-import javax.sound.sampled.EnumControl;
-import java.util.*;
+import java.util.Scanner;
 public class NestedSwitch {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -9,30 +8,34 @@ public class NestedSwitch {
         String department = in.next();
         switch(input){
             case "Swapnil" ->{
-                switch (department){
-                    case "IT" -> System.out.println("Hello Swapnil Wadhankar");
-                    default -> System.out.println("Enter a valid department");
+                if (department.equals("IT")) {
+                    System.out.println("Hello Swapnil Wadhankar");
+                } else {
+                    System.out.println("Enter a valid department");
                 }
 
             }
             case "Vinay" ->{
-                switch (department){
-                    case "CSE" -> System.out.println("Hello Vinay Kumar Gahane");
-                    default -> System.out.println("Enter a valid department");
+                if (department.equals("CSE")) {
+                    System.out.println("Hello Vinay Kumar Gahane");
+                } else {
+                    System.out.println("Enter a valid department");
                 }
 
             }
             case "Shreyash" ->{
-                switch (department){
-                    case "EE" -> System.out.println("Hello Shreyash Ghonge");
-                    default -> System.out.println("Enter a valid department");
+                if (department.equals("EE")) {
+                    System.out.println("Hello Shreyash Ghonge");
+                } else {
+                    System.out.println("Enter a valid department");
                 }
 
             }
             case "Shreyanshu" ->{
-                switch (department){
-                    case "ETC" -> System.out.println("Hello Shreyanshu Deshmukh");
-                    default -> System.out.println("Enter a valid department");
+                if (department.equals("ETC")) {
+                    System.out.println("Hello Shreyanshu Deshmukh");
+                } else {
+                    System.out.println("Enter a valid department");
                 }
 
             }
