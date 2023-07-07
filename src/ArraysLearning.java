@@ -13,9 +13,12 @@ public class ArraysLearning {
         }
         System.out.println();
         print3DArray(arr1);
+<<<<<<< HEAD
         System.out.println("---------------");
         swap(arr1,0,1,1,2);
         print3DArray(arr1);
+=======
+>>>>>>> origin/Learning
     }
     static void printArray(int[] arr){
         int sum =0;
@@ -29,6 +32,7 @@ public class ArraysLearning {
     }
     static void print3DArray(int[][] arr){
         for (int row =0;row<arr.length;row++){
+<<<<<<< HEAD
             for(int col=0;col<arr[row].length;col++){
                 System.out.print(arr[row][col] + " ");
             }
@@ -41,4 +45,10 @@ public class ArraysLearning {
         arr[row1][col1] = arr[row2][col2];
         arr[row2][col2] = temp;
     }
+=======
+            System.out.println(Arrays.toString(arr[row]));
+        }
+
+    }
+>>>>>>> origin/Learning
 }
