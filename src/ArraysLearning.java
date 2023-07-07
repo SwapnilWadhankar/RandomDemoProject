@@ -17,8 +17,10 @@ public class ArraysLearning {
         System.out.println("---------------");
         swap(arr1,0,1,1,2);
         print3DArray(arr1);
+        max(arr1);
 
     }
+    // Function to print 1D array
     static void printArray(int[] arr){
         int sum =0;
         for (int j : arr) {
@@ -29,6 +31,7 @@ public class ArraysLearning {
         System.out.println("");
         System.out.println("The sum of the array is : " + sum);
     }
+    // Function to print an Array
     static void print3DArray(int[][] arr){
         for (int row =0;row<arr.length;row++){
 
@@ -39,10 +42,27 @@ public class ArraysLearning {
         }
 
     }
+    // Function to swap the elements in arrays
     static void swap(int[][] arr, int row1, int col1, int row2, int col2){
         int temp = arr[row1][col1];
         arr[row1][col1] = arr[row2][col2];
         arr[row2][col2] = temp;
+    }
+
+    //Function to print the maximum element
+    static void max(int[][] arr){
+        int max=0;
+        for (int row =0;row<arr.length;row++){
+
+            for(int col=0;col<arr[row].length;col++){
+                if(arr[row][col] > max){
+                    max = arr[row][col];
+                }
+            }
+
+        }
+        System.out.println("The maximum number is : "+ max);
+
     }
 
 
