@@ -1,7 +1,7 @@
 public class InfiniteArrayBinarySearch {
     public static void main(String[] args) {
-        int[] arr = {1, 2,3,4,5,5,6,8,10,34,56,67,78,89,192};
-        int target = 78;
+        int[] arr = {1,2,3,4,5,5,6,8,10,34,56,67,78,89,192};
+        int target = 2;
         int ans = findElement(arr,target);
         System.out.println(ans);
     }
