@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MountainArray {
     public static void main(String[] args) {
-        int[] arr = {0,1,0};
+        int[] arr = {0,1,2,3,4,5,4,0};
         System.out.println("The index of mountain peak element is : " + binarySearch(arr));
 
     }
