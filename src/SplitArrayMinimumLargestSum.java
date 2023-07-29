@@ -4,6 +4,7 @@ public class SplitArrayMinimumLargestSum {
         int m = 2;
         System.out.println(splitArray(arr,m));
     }
+    //split array program has been modified
     static int splitArray(int[] nums, int m){
         int start = 0;
         int end = 0;
