@@ -8,20 +8,20 @@ public class BinarySearch {
         int target = input.nextInt();
         System.out.println(binarySearch(arr, target));
     }
-    static int binarySearch(int[] arr, int target){
+    static int binarySearch(int[] nums, int target){
         int start = 0;
-        int end = arr.length - 1;
+        int end = nums.length - 1;
 
         while(start<=end){
             // first find the middle element using below formula as s+e may exceed the integer limit in java
             int middle = start + (end - start)/2;
             //if the target is < middle element then the element lies in the left side
-            if(target < arr[middle]){
+            if(target < nums[middle]){
                 end = middle-1;
 
             }
             //if the target > middle element that means the element lies in the right hand side
-            else if (target>arr[middle]) {
+            else if (target>nums[middle]) {
                 start = middle + 1;
             }
             //if the target == middle that means element is found
