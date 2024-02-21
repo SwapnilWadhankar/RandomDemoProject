@@ -7,6 +7,16 @@ public class Main {
         somelist.add(30);
         somelist.add(40);
         somelist.forEach((item)-> System.out.println(item*10) );
+
+        int a =10;
+        int b = 0;
+        try{
+            System.out.println(a/b);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }finally {
+            System.out.println("Program closed successfully!");
+        }
     }
 
 
