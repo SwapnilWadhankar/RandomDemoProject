@@ -2,6 +2,7 @@ public class Palindrome {
     public static void main(String[] args) {
 
         System.out.println(isPalindrome(232));
+        System.out.println(sumOfDigits(1234));
     }
     static boolean isPalindrome(int x){
         int n = x;
@@ -16,5 +17,13 @@ public class Palindrome {
         }else{
             return false;
         }
+    }
+    static int sumOfDigits(int x){
+        int n = x;
+        if(n==0){
+            return 0;
+        }
+        int rem = n%10;
+        return rem+ sumOfDigits(n/10);
     }
 }
