@@ -1,7 +1,7 @@
 public class RotationalBinarySearch {
     public static void main(String[] args) {
         int[] arr = {4,5,7,0,1,2};
-        int target = 3;
+        int target = 0;
         System.out.println(search(arr,target));
         System.out.println(findPivot(arr));
 
